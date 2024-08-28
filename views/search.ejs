@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% if (user) {%>
+    <p>
+      ID: <%= user.id %>, Name: <%= user.firstName %> <%= user.lastName %> Age:
+      <%= user.age %> Email: <%= user.email %> Bio: <%= user.bio %>
+    </p>
+    <% } else { %>
+    <p>User not found</p>
+    <% } %>
+  </body>
+</html>
